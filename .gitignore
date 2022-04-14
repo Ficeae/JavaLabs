@@ -1,5 +1,7 @@
+
 .idea/**
 /untitled104.iml
+
 # Created by https://www.toptal.com/developers/gitignore/api/java,intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,intellij
 
@@ -40,9 +42,14 @@
 # .idea/artifacts
 # .idea/compiler.xml
 # .idea/jarRepositories.xml
+
 .idea/modules.xml
 # .idea/*.iml
 .idea/modules
+=======
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
 # *.iml
 # *.ipr
 
@@ -138,4 +145,6 @@ fabric.properties
 hs_err_pid*
 replay_pid*
 
+# End of https://www.toptal.com/developers/gitignore/api/java,intellij
+=======
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij
