@@ -1,0 +1,5 @@
+sessionName, lengthInMinutes, minimumNumberOfParticipants, currentNumberOfParticipants,pricePerPersonInUAH
+swiming, 70, 5, 5, 50
+flyboarding, 15, 2, 2, 250
+hydrofoil, 10, 1, 0, 400
+freediving, 30, 3, 4, 100
