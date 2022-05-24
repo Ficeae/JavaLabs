@@ -2,14 +2,14 @@ package ua.lviv.iot.ProjectPoolSports.SportTypes;
 
 public abstract class WaterSports {
 
-    private String sessionName;
-    private int lengthInMinutes;
-    private int minimumNumberOfParticipants;
+    private final String sessionName;
+    private final int lengthInMinutes;
+    private final int minimumNumberOfParticipants;
+    private final int pricePerPersonInUAH;
     private int currentNumberOfParticipants;
-    private int pricePerPersonInUAH;
 
-    public WaterSports (String sessionName, int lengthInMinutes, int minimumNumberOfParticipants,
-                        int currentNumberOfParticipants, int pricePerPersonInUAH) {
+    public WaterSports(String sessionName, int lengthInMinutes, int minimumNumberOfParticipants,
+                       int currentNumberOfParticipants, int pricePerPersonInUAH) {
         this.sessionName = sessionName;
         this.lengthInMinutes = lengthInMinutes;
         this.minimumNumberOfParticipants = minimumNumberOfParticipants;
@@ -42,13 +42,12 @@ public abstract class WaterSports {
         return currentNumberOfParticipants;
     }
 
-    @Override
-    public String toString() {
-        return "// Name: " + sessionName
-                + "\n| Length: " + lengthInMinutes
-                + "\n| Minimum participants: " + minimumNumberOfParticipants
-                + "\n| Current participants: " + currentNumberOfParticipants
-                + "\n| Price: " + pricePerPersonInUAH + "\n";
-    };
+    public String getHeaders() {
+        return "sessionName, lengthInMinutes, minimumNumberOfParticipants, currentNumberOfParticipants,pricePerPersonInUAH";
+    }
 
+    public String toCSV() {
+        return sessionName + ", " + lengthInMinutes + ", " + minimumNumberOfParticipants
+                + ", " + currentNumberOfParticipants + ", " + pricePerPersonInUAH;
+    }
 }
